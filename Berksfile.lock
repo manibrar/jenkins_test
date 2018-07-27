@@ -1,32 +1,26 @@
 DEPENDENCIES
-  mongo-server
-    git: git@github.com:spartaglobal/mongo-server-cookbook.git
-    revision: 88c20dbcaaeca4201170f336a7d6b8df8d14995e
-  node-server
-    git: git@github.com:spartaglobal/node-server-cookbook.git
-    revision: 9eb7262ed20fa793cc344f91cadad248281cd49e
+  mongodb
+    git: git@github.com:manibrar/mongo_chef_unit_and_integration.git
+    revision: dc934d5d60783351a219fce235ac548f12868e8e
+  node
+    git: git@github.com:manibrar/node_chef_unit_integration.git
+    revision: abcaff9629e3090b16788f3d830e9e325d25fe8f
 
 GRAPH
-  apt (6.1.4)
-  build-essential (8.0.4)
+  ark (4.0.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  build-essential (8.1.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  compat_resource (12.19.1)
-  dmg (4.1.0)
-  git (6.0.0)
-    build-essential (>= 0.0.0)
-    dmg (>= 0.0.0)
-    yum-epel (>= 0.0.0)
-  mingw (2.0.1)
+  mingw (2.1.0)
     seven_zip (>= 0.0.0)
-  mongo-server (0.3.1)
-  node-server (0.3.0)
-    apt (~> 6.1.0)
-    git (~> 6.0.0)
-  ohai (5.2.1)
-  seven_zip (2.0.2)
-    windows (>= 1.2.2)
-  windows (3.4.4)
-    ohai (>= 4.0.0)
-  yum-epel (2.1.2)
-    compat_resource (>= 12.16.3)
+  mongodb (0.1.0)
+  node (0.1.0)
+    nodejs (~> 5.0.0)
+  nodejs (5.0.0)
+    ark (>= 2.0.2)
+    build-essential (>= 0.0.0)
+  seven_zip (3.0.0)
+    windows (>= 0.0.0)
+  windows (5.0.0)
